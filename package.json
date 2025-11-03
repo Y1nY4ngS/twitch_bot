@@ -1,0 +1,17 @@
+{
+  "name": "twitch_bot",
+  "version": "1.0.0",
+  "description": "Chat bot for Y1n Y4ngS's Twitch channel",
+  "license": "ISC",
+  "author": "Y1n Y4ngS",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "tmi.js": "^1.8.5"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "M7": {
+    "code": "BUILD_CODE_FOR_M7",
+    "aliases": ["m7"]
+  },
+  "M4A1": {
+    "code": "BUILD_CODE_FOR_M4A1",
+    "aliases": ["m4"]
+  },
+  "AKM": {
+    "code": "BUILD_CODE_FOR_AKM",
+    "aliases": ["akm"]
+  },
+  "K416": {
+    "code": "BUILD_CODE_FOR_K416",
+    "aliases": ["k416"]
+  }
+}
