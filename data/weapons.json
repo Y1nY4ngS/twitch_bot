@@ -1,18 +1,54 @@
-{
-  "M7": {
-    "code": "BUILD_CODE_FOR_M7",
-    "aliases": ["m7"]
-  },
-  "M4A1": {
-    "code": "BUILD_CODE_FOR_M4A1",
-    "aliases": ["m4"]
-  },
-  "AKM": {
-    "code": "BUILD_CODE_FOR_AKM",
-    "aliases": ["akm"]
-  },
-  "K416": {
-    "code": "BUILD_CODE_FOR_K416",
-    "aliases": ["k416"]
-  }
+{ 
+    "M7":{
+        "codes": {
+            "Standard": "M7 Battle Rifle-Operations-6HUGGDC07M8VM40VSF4BQ"
+        },
+        "aliases:": ["m7"]
+    },
+    "K416": {
+        "codes": {
+            "Standard": "K416 Assault Rifle-Operations-6HUGGKO07M8VM40VSF4BQ"
+        },
+        "aliases": ["k416"]
+    },
+    "K417": {
+        "codes": {
+            "Standard": "K437 Assault Rifle-Operations-6HUGH9807M8VM40VSF4BQ"
+        },
+        "aliases": ["k417"]
+    },
+    "M4A1": {
+        "codes": {
+            "Standard": "M4A1 Assault Rifle-Operations-6HQCL1O07M8VM40VSF4BQ"
+        },
+        "aliases": ["m4"]
+    },
+    "CI-19": {
+        "codes": {
+            "Standard": "CI-19 Assault Rifle-Operations-6HUK24S07M8VM40VSF4BQ"
+        },
+        "aliases": ["ci"]
+    },
+    "AKM":{
+        "codes": {
+            "Standard": "AKM Assault Rifle-Operations-6HUK37S07M8VM40VSF4BQ"
+        },
+        "aliases": ["akm"]
+    },
+    "M700": {
+        "codes": {
+            "CQC": "M700 Sniper Rifle-Operations-6HUK3R007M8VM40VSF4BQ",
+            "Long Range": "xx"
+        },
+        "aliases": ["m700"]
+    },
+    "SV-98": {
+        "codes": {
+            "CQC": "ss",
+            "Long Range": "SV-98 Sniper Rifle-Operations-6HUK3L807M8VM40VSF4BQ (6-12 Scope)"
+        },
+        "aliases": ["sv"]
+    }
+
+
 }
