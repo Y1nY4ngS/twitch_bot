@@ -3,7 +3,8 @@ const {sendMulti} = require('../utils/reply');
 const {linkFilter} = require('./middleware/linkFilter');
 const {applyCooldown} = require('./middleware/cooldowns');
 const {command} = require('./command');
-const {handleFirstTimeChatter} = require('./middleware/firstTimeChatter');
+const { handleFirstTimeChatter} = require('./middleware/firstTimeChatter')
+
 
 function onMessage(client){
     return async (channel, tags, message, self) => {

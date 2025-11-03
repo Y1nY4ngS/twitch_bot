@@ -7,6 +7,11 @@ module.exports = {
     },
     info: {
         response: (username)=>
-            `@${username}, my name is Quoc Hung Nguyen, I'm ${age(process.env.BOD)} and live in Switzerland.`,
+            `@${username}, my name is Hung, I'm ${age(process.env.BOD)} and currently I'm in Switzerland.`,
   },
+    randomNumber: {
+        response: (username =>
+            `@${username}, your number was ${usernumber} a`
+        )
+    }
 };
