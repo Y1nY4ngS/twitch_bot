@@ -1,4 +1,4 @@
-const { base } = require('./base');
+const base = require('./base');
 const makeWpCommands = require('./wp');
 
 const command = {

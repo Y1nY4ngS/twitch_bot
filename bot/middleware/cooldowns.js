@@ -23,6 +23,7 @@ function applyCooldown(tags, command){
     if (now - last < cooldown){
         return false;
     }
+    store.set(key, now)
     return true;
 };
 

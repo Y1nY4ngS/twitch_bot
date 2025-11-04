@@ -3,14 +3,14 @@ const {sendMulti} = require('../utils/reply');
 const linkFilter = require('./middleware/linkFilter');
 const applyCooldown = require('./middleware/cooldowns');
 const command = require('./command');
-const  handleFirstTimeChatter = require('./middleware/firstTimeChatter')
+const handleFirstTimeChatter = require('./middleware/firstTimeChatter')
 
 
 function onMessage(client){
     return async (channel, tags, message, self) => {
         if (self) return;
 
-        if (await linkFilter(client, channel, tags, message, self)) return;
+        if (await linkFilter(channel, tags, message, self, client)) return;
 
         await handleFirstTimeChatter(client, channel, tags);
 
@@ -18,7 +18,7 @@ function onMessage(client){
 
         const {name, arg} = parseCommand(message);
 
-        if (!applyCooldown(tags.username, name)) return;
+        if (!applyCooldown(tags, name)) return;
 
         const cmd = command[name];
         if (!cmd) return;
