@@ -1,8 +1,8 @@
 require('dotenv').config();
-const { createClient } = require('./bot/client');
-const { onMessage } = require('./bot/handler');
-const { onConnect } = require('./bot/middleware/onConnect');
-const {validateEnv} = require('./utils/config');
+const createClient = require('./bot/client');
+const onMessage = require('./bot/handler');
+const onConnect = require('./bot/middleware/onConnect');
+const validateEnv = require('./utils/config');
 
 validateEnv();
 

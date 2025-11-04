@@ -1,5 +1,3 @@
-const { info } = require("../command/base");
-
 const store = new Map();
 const Cooldown_MS = 10000;
 
@@ -27,4 +25,4 @@ function applyCooldown(tags, command){
     }
     return true;
 }
-module.exports = { applyCooldown };
+module.exports =  applyCooldown ;

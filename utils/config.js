@@ -5,4 +5,4 @@ function validateEnv() {
         throw new Error(`Missing required environment variables: ${missing.join(', ')}`);
     }
 }
-module.exports = { validateEnv };
+module.exports = validateEnv;

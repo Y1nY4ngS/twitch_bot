@@ -86,4 +86,4 @@ function makeWpCommands() {
 	return commands;
 }
 
-module.exports = { makeWpCommands };
+module.exports =  makeWpCommands ;

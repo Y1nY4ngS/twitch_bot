@@ -1,4 +1,4 @@
-const { startAutoMessage} = require('./autoMessage');
+const startAutoMessage = require('./autoMessage');
 
 function onConnect(client) {
     client.on('connect', (addr, port) => {
@@ -9,4 +9,4 @@ function onConnect(client) {
         startAutoMessage(client, `#${channelName}`);
     })
 }
-module.exports = { onConnect };
+module.exports =  onConnect ;

@@ -1,9 +1,9 @@
 const {isCommand, parseCommand} = require('../utils/parse');
 const {sendMulti} = require('../utils/reply');
-const {linkFilter} = require('./middleware/linkFilter');
-const {applyCooldown} = require('./middleware/cooldowns');
-const {command} = require('./command');
-const { handleFirstTimeChatter} = require('./middleware/firstTimeChatter')
+const linkFilter = require('./middleware/linkFilter');
+const applyCooldown = require('./middleware/cooldowns');
+const command = require('./command');
+const  handleFirstTimeChatter = require('./middleware/firstTimeChatter')
 
 
 function onMessage(client){
@@ -29,4 +29,4 @@ function onMessage(client){
         await sendMulti(client, channel, raw);
     }  
 }
-module.exports = { onMessage };
+module.exports = onMessage;

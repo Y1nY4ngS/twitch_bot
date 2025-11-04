@@ -1,4 +1,4 @@
-const { welcomeMessages } = require('../../data/welcomeMessages');
+const welcomeMessages = require('../../data/welcomeMessages');
 
 async function handleFirstTimeChatter(client, channel, tags){
     if(tags['first-msg']){
@@ -18,4 +18,4 @@ async function handleFirstTimeChatter(client, channel, tags){
     return false;
 }
 
-module.exports = { handleFirstTimeChatter };
+module.exports =  handleFirstTimeChatter ;

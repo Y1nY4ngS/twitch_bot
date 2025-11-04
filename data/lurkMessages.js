@@ -4,4 +4,4 @@ const lurkMessages = [
     `Sad to see you go, we will wait for @{{username}} eagerly to return`,
     `Stay save till we meet again @{{username}}`,
 ]
-module.exports = { lurkMessages }
+module.exports =  lurkMessages 
