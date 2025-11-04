@@ -23,4 +23,17 @@ async function writeLurk(username, time = new Date()) {
     return {username, time: new Date(time)}
 }
 
-module.exports = writeLurk;
+async function updateLurkTime(username) {
+    const db = await getDB();
+    const col = db.collection('lurk');
+
+    const userNameLower = String(username).toLowerCase();
+
+    const result = await col.updateOne(
+        {usernameLower},
+        {$set: {startedAt: new Date(time)}},
+        {upsert: false}
+    );
+}
+
+module.exports = { writeLurk, updateLurkTime }
