@@ -16,6 +16,6 @@ async function handleFirstTimeChatter(client, channel, tags){
         return true;
     }
     return false;
-}
+};
 
 module.exports =  handleFirstTimeChatter ;

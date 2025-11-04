@@ -18,6 +18,6 @@ function randomNumber(userNumber) {
         string = `Sadly the number was ${num}`
     }
     return string;
-}
+};
 
 module.exports = randomNumber;

@@ -8,5 +8,6 @@ function onConnect(client) {
 
         startAutoMessage(client, `#${channelName}`);
     })
-}
+};
+
 module.exports =  onConnect ;

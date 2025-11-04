@@ -1,6 +1,6 @@
 const age = require('../command/age');
 const randomNumber = require('../command/randomNumber');
-const lurkMessageController = require('../middleware/lurkMessageController')
+const lurkMessageController = require('../middleware/lurkMessageController');
 
 module.exports = {
     help: {

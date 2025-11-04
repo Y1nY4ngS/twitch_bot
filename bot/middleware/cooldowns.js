@@ -9,7 +9,7 @@ const Per_Command = {
 
 function getCooldown(command) {
     return Per_Command[command] ?? Cooldown_MS;
-}
+};
 
 function applyCooldown(tags, command){
     const isPrivileged = tags.mod === true;
@@ -24,5 +24,6 @@ function applyCooldown(tags, command){
         return false;
     }
     return true;
-}
+};
+
 module.exports =  applyCooldown ;

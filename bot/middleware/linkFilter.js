@@ -25,6 +25,6 @@ async function linkFilter(channel, tags, message, self, client){
     }
     
     return false;
-}
+};
 
 module.exports =  linkFilter ;

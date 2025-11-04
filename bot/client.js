@@ -9,5 +9,6 @@ function createClient() {
         },
         channels: [process.env.TWITCH_CHANNEL],
     });
-}
+};
+
 module.exports = createClient

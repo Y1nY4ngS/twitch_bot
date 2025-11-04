@@ -68,5 +68,6 @@ function startAutoMessage(client, channel) {
 
     const initial = Math.floor(Math.random() * (MAX_INTERVAL - MIN_INTERVAL + 1)) + MIN_INTERVAL;
     setTimeout(sendMessage, initial);
-}
+};
+
 module.exports = startAutoMessage;

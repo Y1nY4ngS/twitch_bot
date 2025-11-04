@@ -25,7 +25,7 @@ function loadWeapons() {
 		});
 	}
 	return { weapon_Name, weapon_Code };
-}
+};
 
 function makeWpCommands() {
 	const { weapon_Code } = loadWeapons();
@@ -81,9 +81,9 @@ function makeWpCommands() {
 			if (!alias) continue;
 			commands[alias.toLowerCase()] = { response: weaponResponse };
 		}
-	}
+	};
 
 	return commands;
-}
+};
 
-module.exports =  makeWpCommands ;
+module.exports = makeWpCommands;

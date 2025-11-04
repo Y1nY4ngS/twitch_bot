@@ -28,5 +28,6 @@ function onMessage(client){
         if (!raw) return;
         await sendMulti(client, channel, raw);
     }  
-}
+};
+
 module.exports = onMessage;

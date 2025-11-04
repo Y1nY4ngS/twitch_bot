@@ -34,5 +34,6 @@ async function getAppToken() {
     cachedToken = data.access_token;
     expiryTs = now + data.expires_in * 1000;
     return cachedToken;
-}
+};
+
 module.exports =  getAppToken ;
