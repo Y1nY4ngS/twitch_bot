@@ -1,4 +1,4 @@
-const getDB = require('./connect');
+const getDB = require('../connect');
 
 async function writeLurk(username, time = new Date()) {
     const db = await getDB();
@@ -7,11 +7,11 @@ async function writeLurk(username, time = new Date()) {
     const userNameLower = String(username).toLowerCase();
 
     await col.updateOne(
-        {usernameLower},
+        {userNameLower},
         {
             $set: {
                 username,
-                usernameLower,
+                userNameLower,
                 startedAt: new Date(time),
             },
         },
@@ -23,17 +23,4 @@ async function writeLurk(username, time = new Date()) {
     return {username, time: new Date(time)}
 }
 
-async function updateLurkTime(username) {
-    const db = await getDB();
-    const col = db.collection('lurk');
-
-    const userNameLower = String(username).toLowerCase();
-
-    const result = await col.updateOne(
-        {usernameLower},
-        {$set: {startedAt: new Date(time)}},
-        {upsert: false}
-    );
-}
-
-module.exports = { writeLurk, updateLurkTime }
+module.exports = writeLurk;

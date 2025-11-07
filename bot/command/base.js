@@ -1,6 +1,6 @@
 const age = require('../command/age');
 const randomNumber = require('../command/randomNumber');
-const lurkMessageController = require('../middleware/lurkMessageController');
+const handleLurk = require('../command/lurk')
 
 module.exports = {
     help: {
@@ -16,7 +16,8 @@ module.exports = {
             `@${username},${randomNumber(argument)}`,
     },
     lurk: {
-        response: (username) =>
-            `${lurkMessageController(username)}`
+        response: async (username) {
+            return await handleLurk(username)
+        }
     }
 };

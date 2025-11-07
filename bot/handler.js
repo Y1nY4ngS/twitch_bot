@@ -23,7 +23,7 @@ function onMessage(client){
         const cmd = command[name];
         if (!cmd) return;
 
-        const raw = typeof cmd.response === 'function' ? cmd.response(tags.username, arg, tags, client, channel): cmd.response;
+        const raw = typeof cmd.response === 'function' ? await cmd.response(tags['display-name'] || tags.username, arg, tags, client, channel): cmd.response;
 
         if (!raw) return;
         await sendMulti(client, channel, raw);

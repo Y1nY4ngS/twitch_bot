@@ -1,4 +1,4 @@
-const getDB = require('./connect')
+const getDB = require('../connect')
 
 async function readLurk(username) {
     const db = await getDB();
